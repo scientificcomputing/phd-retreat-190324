@@ -1,0 +1,37 @@
+name: Build documentation and upload artifact
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+    branches: main
+
+env:
+  # Directory that will be published on github pages
+  PUBLISH_DIR: ./_build/html
+
+jobs:
+
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node v18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Build slides
+        run: |
+          npx @marp-team/marp-cli slides.md --html -o ${{ env.PUBLISH_DIR }}/index.html
+          cp figures/*.png ${{ env.PUBLISH_DIR }}/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: ${{ env.PUBLISH_DIR }}
+          if-no-files-found: error
+          name: documentation
