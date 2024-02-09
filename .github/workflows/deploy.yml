@@ -19,8 +19,11 @@ jobs:
   build-docs:
     uses: ./.github/workflows/build_docs.yml
 
+  pre-commit:
+    uses: ./.github/workflows/pre-commit.yml
+
   deploy:
-    needs: [build-docs]
+    needs: [build-docs, pre-commit]
 
     environment:
       name: github-pages
