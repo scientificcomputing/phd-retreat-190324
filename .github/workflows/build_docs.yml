@@ -19,6 +19,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install .
+
+      - name: Build docs
+        run: jupyter book build .
+
       - name: Use Node v18
         uses: actions/setup-node@v4
         with:
@@ -26,8 +39,10 @@ jobs:
 
       - name: Build slides
         run: |
-          npx @marp-team/marp-cli slides.md --html -o ${{ env.PUBLISH_DIR }}/index.html
-          cp figures/*.png ${{ env.PUBLISH_DIR }}/
+          for doc in $(ls docs/*.md); do
+            npx @marp-team/marp-cli ${doc} --html -o ${{ env.PUBLISH_DIR }}/$(basename ${doc::-3})-slides.html
+          done
+          cp -r docs/figures ${{ env.PUBLISH_DIR }}/
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
