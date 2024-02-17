@@ -260,3 +260,20 @@ https://semver.org
 https://choosealicense.com
 
 ---
+
+
+## Data repositories and data sharing
+
+- Large datasets (more than 50MB) should not be stored in your git repository
+    - Git does not work well with binary files
+- Instead you should store large files in a data repository
+    - Use Google Drive / Dropbox / Other while developing
+    - Publish Data on Zenodo when ready (Zenodo and GitHub integrates well)
+
+---
+
+## Other tools for data repositories
+
+- [DVC (open-source Version Control System for Machine Learning Projects](https://dvc.org)
+- [git Large File Storage](https://git-lfs.com)
+- [DataLad](https://www.datalad.org)
