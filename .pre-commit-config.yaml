@@ -11,4 +11,4 @@ repos:
     rev: v6.31.0
     hooks:
       - id: cspell
-        files: slides.md|README.md
+        files: docs/(.+).md|README.md

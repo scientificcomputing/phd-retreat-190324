@@ -44,17 +44,17 @@ marp: true
 ├── LICENSE
 ├── README.md
 ├── code
-│   ├── run-preprocess.py
+│   ├── run-pre-process.py
 │   ├── run-analysis.py
-│   └── run-postprocess.py
+│   └── run-post-process.py
 ├── raw_data
 │   └── raw_data.txt
 └── requirements.txt
 ```
 ```
-python3 code/run-preprocess.py raw_data/raw_data.txt -o data
+python3 code/run-pre-process.py raw_data/raw_data.txt -o data
 python3 code/run-analysis.py data -o results
-python3 code/run-postprocess results -o figures
+python3 code/run-post-process results -o figures
 ```
 
 ---
@@ -74,9 +74,9 @@ It is a good idea to make it possible to pass arguments
 Create script called `run_all_experiments.sh`
 ```bash
 for file in file1 file2; do
-    python3 code/run-preprocess.py raw_data/${file}.txt -o data/${file}.csv
+    python3 code/run-pre-process.py raw_data/${file}.txt -o data/${file}.csv
     python3 code/run-analysis.py data/${file}.csv -o results/${file}.csv
-    python3 code/run-postprocess results/${file}.csv -o figures/${file}.png
+    python3 code/run-post-process results/${file}.csv -o figures/${file}.png
 done
 ```
 
@@ -90,9 +90,9 @@ Create script called `run_all_experiments.py`
 import subprocess as sp
 
 for file in ["file1", "file2"]:
-    sp.run(["python3", "code/run-preprocess.py", f"raw_data/{file}.txt", "-o",  f"data/{file}.csv"])
+    sp.run(["python3", "code/run-pre-process.py", f"raw_data/{file}.txt", "-o",  f"data/{file}.csv"])
     sp.run(["python3", "code/run-analysis.py", f"data/{file}.csv", "-o", "results/{file}.csv"])
-    sp.run(["python3", "code/run-postprocess", f"results/{file}.csv", "-o", "figures/{file}.png"])
+    sp.run(["python3", "code/run-post-process", f"results/{file}.csv", "-o", "figures/{file}.png"])
 ```
 
 ---
@@ -146,9 +146,9 @@ It is essential that we know that our program is working correctly
 ```python
 # src/code.py
 
-def find_first_word_that_starts_with(wordlist: list[str], starts_with: str) -> str | None:
+def find_first_word_that_starts_with(word_list: list[str], starts_with: str) -> str | None:
 
-    for word in wordlist:
+    for word in word_list:
         if word.startswith(starts_with):
             return word
     return None
