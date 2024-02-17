@@ -129,6 +129,32 @@ research_paper_1
 
 ---
 
+## Writing a README file
+
+- The first documentation a user reads is the README file
+- `README.md` (markdown) - https://www.markdownguide.org/basic-syntax/
+- Should include
+  - Title of the project
+  - Description of the project
+  - Installation instructions
+  - How to get started
+
+---
+
+## The README file (continued)
+
+- ### Optional
+  - Badges
+  - Information about how to contribute
+  - License information (should also be in a separate file)
+  - Credits
+  - Example
+  - How to cite
+  - Screenshots / figures
+* README skeleton generator: https://readme.so
+
+---
+
 ## What is GitHub?
 
 * A place to host your remote repositories

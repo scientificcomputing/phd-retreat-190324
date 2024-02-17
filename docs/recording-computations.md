@@ -71,7 +71,7 @@ It is a good idea to make it possible to pass arguments
 ## Tools to create automated workflows
 
 **bash**
-Create script balled `run_all_experiments.sh`
+Create script called `run_all_experiments.sh`
 ```bash
 for file in file1 file2; do
     python3 code/run-preprocess.py raw_data/${file}.txt -o data/${file}.csv
@@ -85,7 +85,7 @@ done
 ## Tools to create automated workflows
 
 **python**
-Create script balled `run_all_experiments.py`
+Create script called `run_all_experiments.py`
 ```python
 import subprocess as sp
 
@@ -184,7 +184,7 @@ This will search for all files starting or ending with `test` and run all functi
 
 Add tests to the word count example.
 
-Create a folder called `tests` and a files inside it called `test_word_count`
+Create a folder called `tests` and a file inside it called `test_word_count`
 
 
 ---
