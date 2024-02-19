@@ -235,13 +235,6 @@ https://semver.org
 
 ---
 
-## Demo / Exercise: bump the version
-
-- Change the version of your paper
-- Create a new tag and release
-
----
-
 ## Licenses
 
 - What can other users do with the material in your repository?
@@ -277,3 +270,10 @@ https://choosealicense.com
 - [DVC (open-source Version Control System for Machine Learning Projects](https://dvc.org)
 - [git Large File Storage](https://git-lfs.com)
 - [DataLad](https://www.datalad.org)
+
+
+---
+
+## Next up: Recording environments
+
+https://scientificcomputing.github.io/phd-retreat-190324/environments-slides

@@ -15,6 +15,7 @@ The individual slides are available here:
 - https://scientificcomputing.github.io
 - https://github.com/scientificcomputing/seminar-23-11-2023
 - [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/reproducible-research)
+- [Coderefinery](https://coderefinery.github.io/reproducible-research/)
 - [Scientific Python Library Development Guide](https://learn.scientific-python.org/development/)
 
 

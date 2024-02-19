@@ -21,6 +21,19 @@ Henrik Finsberg
 
 ---
 
+## About me
+
+- 2014: Master in applied mathematics from NTNU, Trondheim
+- 2014 - 2017: PhD: Computational Physiology, Simula
+- 2017 - 2021: Research Engineer, Computational Physiology, Simula
+- 2021 - present: Senior Research Engineer, Computational Physiology, Simula
+- 2018 - present: Lecturing at UiO: IN1910 - programming for scientific applications
+
+- I work on developing research software for cardiac applications
+- I am a tools geek, and like to try out new software tools that can help me in my work
+
+---
+
 <!--
 Here are the general steps needed fro reproducible research
 -->
@@ -33,8 +46,7 @@ Here are the general steps needed fro reproducible research
 
 ## Plan this workshop
 
-- What is reproductivity, and why do we need it?  (15 minutes)
-- Example papers: discuss in groups  (15 minutes)
+- What is reproducibility, and why do we need it?  (15 minutes)
 - Organizing your projects (version control) (30 minutes)
 - Break
 
@@ -59,7 +71,7 @@ Here are the general steps needed fro reproducible research
 - https://scientificcomputing.github.io/phd-retreat-190324
 
 Based on material from
--
+- https://github.com/scientificcomputing/seminar-23-11-2023
 - https://coderefinery.github.io/reproducible-research/
 - https://the-turing-way.netlify.app/reproducible-research/reproducible-research
 
@@ -94,10 +106,11 @@ Based on material from
 
 ---
 
-## Discussion
+## Discussion in groups (department-wise)
 
 - Did you find any issues while trying to reproduce the article that was handed out?
 - What was missing?
+
 
 ---
 
@@ -175,3 +188,10 @@ Ask the students
 ![w:700 center](figures/barriers-reproducibility.png)
 
 <p class="small-text"> Used under a CC-BY 4.0 license. DOI: 10.5281/zenodo.2669547.#</p>
+
+
+---
+
+## Next up: Organizing your projects
+
+https://scientificcomputing.github.io/phd-retreat-190324/organizing-slides
