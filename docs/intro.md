@@ -46,22 +46,17 @@ Here are the general steps needed fro reproducible research
 
 ## Plan this workshop
 
-- What is reproducibility, and why do we need it?  (15 minutes)
-- Organizing your projects (version control) (30 minutes)
-- Break
+- What is reproducibility, and why do we need it?
+- Organizing your projects (version control)
 
 ---
-- Recording dependencies (10 minutes)
-  - Exercise (20 minutes)
-- Break
-- Recording environment (docker)
-- Recording computational steps (10 minutes)
-  - Exercise (20 minutes)
-- Verifying computations using tests
-  - Exercise (10)
-- Automation with GitHub workflows
-- Example papers
 
+- Recording dependencies and environment
+- Recording computational steps
+  - Testing
+  - Automation with GitHub workflows
+  - Exercises
+- Example papers and concluding remarks
 
 ---
 

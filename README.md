@@ -1,6 +1,6 @@
 # Material for PhD Retreat: Open Science and Reproducibility
 
-This repository contains material for the seminar on from the *PhD Retreat Day 1: Open Science and Reproducibility.
+This repository contains material for the seminar on from the *PhD Retreat Day 1: Open Science and Reproducibility*
 
 All material are available at https://scientificcomputing.github.io/phd-retreat-190324 built using [jupyter-book](https://jupyterbook.org/en/stable/intro.html).
 
