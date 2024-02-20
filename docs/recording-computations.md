@@ -159,7 +159,7 @@ def find_first_word_that_starts_with(word_list: list[str], starts_with: str) -> 
 
 def test_find_first_word_that_starts_with():
     lst = ["This is a test"]
-    assert find_first_word_that_starts_with(lst, "t") == "Test"
+    assert find_first_word_that_starts_with(lst, "t") == "This"
 ```
 
 ---
@@ -224,3 +224,59 @@ Note: You are confident that the results are correct so we just want to make sur
         assert results == expected_results
 
 But ideally you should split the code into smaller functions and tests them one by one.
+
+
+---
+
+## Adding automation to GitHub
+
+It is handy to have yours tests being rerun every time you push to the repository. This can be done using GitHub actions which only requires you to first create a folder `.github/workflows` and then put a `.yml` inside it.
+
+- Do Exercise 3 in the `word-count` repository.
+
+
+---
+
+## Automation to reproduce results
+
+GitHub actions can also be used to reproduce your results and upload the results and figures as an artifact.
+
+- Do Exercise 4
+
+---
+
+## Create a release
+
+We now have a version that we are happy with, and can create a release
+
+- Do exercise 5
+
+
+---
+
+## Capturing the environment
+
+Create a docker image containing all the dependencies, code and data
+
+- Do exercise 6
+
+---
+
+## Creating a workflow for pushing the docker image'
+
+- Do exercise 7
+
+---
+
+## Example repositories
+
+- https://github.com/scientificcomputing/example-paper
+- https://github.com/scientificcomputing/example-paper-fenics
+- https://github.com/ComputationalPhysiology/automatic-motion-estimation
+- https://github.com/ComputationalPhysiology/ciucci-2024
+
+
+---
+
+![w:700 center](figures/repro_steps.jpeg)
+<p class="small-text">Image is used under a CC-BY 4.0 license. https://twitter.com/HeidiBaya/status/1579385587865649153.</p>

@@ -23,12 +23,12 @@ marp: true
 * Different environments running the same code can produce different results.
     - Some packages might have updates that changes / breaks the code
 
-Example (python2 vs python3):
-```python
-a = 1
-b = 5
-print(a/b)
-```
+* Example (python2 vs python3):
+    ```python
+    a = 1
+    b = 5
+    print(a/b)
+    ```
 
 
 ---
@@ -254,7 +254,7 @@ In these situations, [Spack](https://spack.readthedocs.io/en/latest/index.html) 
 
 ---
 
-* Exit container with `Ctrl+D` or `exit`
+- Exit container with `Ctrl+D` or `exit`
 * Start existing container
     ```
     docker start my-research-code
@@ -366,3 +366,10 @@ COPY . /repo
 You can automate this process with GitHub actions. We will have an exercise later :)
 ![bg right fit](figures/docker_meme.jpg)
 Image taken from [reddit](https://www.reddit.com/r/ProgrammerHumor/comments/cw58z7/it_works_on_my_machine/)
+
+
+---
+
+## Next up: Recording computations
+
+https://scientificcomputing.github.io/phd-retreat-190324/recording-computations-slides
