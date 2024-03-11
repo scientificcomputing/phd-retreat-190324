@@ -158,7 +158,7 @@ def find_first_word_that_starts_with(word_list: list[str], starts_with: str) -> 
 # tests/test_code.py
 
 def test_find_first_word_that_starts_with():
-    lst = ["This is a test"]
+    lst = ["This", "is", "a", "test"]
     assert find_first_word_that_starts_with(lst, "t") == "This"
 ```
 
