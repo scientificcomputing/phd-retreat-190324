@@ -103,7 +103,7 @@ Based on material from
 
 ## Discussion in groups (department-wise)
 
-- Did you find any issues while trying to reproduce the article that was handed out?
+- Did you find any issues while trying to reproduce the results article that was handed out?
 - What was missing?
 
 
