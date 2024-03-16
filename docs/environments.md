@@ -288,6 +288,10 @@ In these situations, [Spack](https://spack.readthedocs.io/en/latest/index.html) 
 
 * The developer needs to write a `Dockerfile` with instructions on how to build and install the dependencies
 * The developer needs to build an image and push this to a registry
+* Build image from `Dockerfile` with
+  ```
+  docker build -t my-image .
+  ```
 
 ---
 
@@ -361,7 +365,7 @@ COPY . /repo
 
 ---
 
-## When you submit / publish as paper always create a docker image that can reproduce the environment
+## When you submit / publish a paper always create a docker image that can reproduce the environment
 
 You can automate this process with GitHub actions. We will have an exercise later :)
 ![bg right fit](figures/docker_meme.jpg)

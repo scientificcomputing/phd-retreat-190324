@@ -54,7 +54,7 @@ marp: true
 ```
 python3 code/run-pre-process.py raw_data/raw_data.txt -o data
 python3 code/run-analysis.py data -o results
-python3 code/run-post-process results -o figures
+python3 code/run-post-process results.py -o figures
 ```
 
 ---
@@ -230,7 +230,7 @@ But ideally you should split the code into smaller functions and tests them one 
 
 ## Adding automation to GitHub
 
-It is handy to have yours tests being rerun every time you push to the repository. This can be done using GitHub actions which only requires you to first create a folder `.github/workflows` and then put a `.yml` inside it.
+It is handy to have your tests being rerun every time you push to the repository. This can be done using GitHub actions which only requires you to first create a folder `.github/workflows` and then put a `.yml` inside it.
 
 - Do Exercise 3 in the `word-count` repository.
 
@@ -262,7 +262,7 @@ Create a docker image containing all the dependencies, code and data
 
 ---
 
-## Creating a workflow for pushing the docker image'
+## Creating a workflow for pushing the docker image
 
 - Do exercise 7
 

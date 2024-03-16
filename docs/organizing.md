@@ -24,6 +24,11 @@ marp: true
 
 ---
 
+![bg contain](figures/phd_final.gif)
+
+
+---
+
 ## Why version control systems?
 
 <!--

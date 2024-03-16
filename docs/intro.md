@@ -21,6 +21,31 @@ Henrik Finsberg
 
 ---
 
+## Plan this workshop
+
+- What is reproducibility, and why do we need it?
+- Organizing your projects (version control)
+- Recording dependencies and environment
+- Recording computational steps (exercises)
+  - Testing
+  - Automation with GitHub workflows
+  - Docker
+- Example papers and concluding remarks
+
+---
+
+## Material from the workshop
+
+- https://github.com/scientificcomputing/phd-retreat-190324
+- https://scientificcomputing.github.io/phd-retreat-190324
+
+Based on material from
+- https://github.com/scientificcomputing/seminar-23-11-2023
+- https://coderefinery.github.io/reproducible-research/
+- https://the-turing-way.netlify.app/reproducible-research/reproducible-research
+
+---
+
 ## About me
 
 - 2014: Master in applied mathematics from NTNU, Trondheim
@@ -43,34 +68,6 @@ Here are the general steps needed fro reproducible research
 
 ---
 
-
-## Plan this workshop
-
-- What is reproducibility, and why do we need it?
-- Organizing your projects (version control)
-
----
-
-- Recording dependencies and environment
-- Recording computational steps
-  - Testing
-  - Automation with GitHub workflows
-  - Exercises
-- Example papers and concluding remarks
-
----
-
-## Material from the workshop
-
-- https://github.com/scientificcomputing/phd-retreat-190324
-- https://scientificcomputing.github.io/phd-retreat-190324
-
-Based on material from
-- https://github.com/scientificcomputing/seminar-23-11-2023
-- https://coderefinery.github.io/reproducible-research/
-- https://the-turing-way.netlify.app/reproducible-research/reproducible-research
-
----
 
 ## Scenario 1
 
