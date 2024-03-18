@@ -52,9 +52,9 @@ marp: true
 └── requirements.txt
 ```
 ```
-python3 code/run-pre-process.py raw_data/raw_data.txt -o data
-python3 code/run-analysis.py data -o results
-python3 code/run-post-process results.py -o figures
+python3 code/run-pre-process.py raw_data/raw_data1.txt -o data/data1.csv
+python3 code/run-analysis.py data/data1.csv -o results/results1.csv
+python3 code/run-post-process.py results/results1.csv -o figures/figure1.png
 ```
 
 ---
@@ -76,7 +76,7 @@ Create script called `run_all_experiments.sh`
 for file in file1 file2; do
     python3 code/run-pre-process.py raw_data/${file}.txt -o data/${file}.csv
     python3 code/run-analysis.py data/${file}.csv -o results/${file}.csv
-    python3 code/run-post-process results/${file}.csv -o figures/${file}.png
+    python3 code/run-post-process.py results/${file}.csv -o figures/${file}.png
 done
 ```
 
@@ -92,7 +92,7 @@ import subprocess as sp
 for file in ["file1", "file2"]:
     sp.run(["python3", "code/run-pre-process.py", f"raw_data/{file}.txt", "-o",  f"data/{file}.csv"])
     sp.run(["python3", "code/run-analysis.py", f"data/{file}.csv", "-o", "results/{file}.csv"])
-    sp.run(["python3", "code/run-post-process", f"results/{file}.csv", "-o", "figures/{file}.png"])
+    sp.run(["python3", "code/run-post-process.py", f"results/{file}.csv", "-o", "figures/{file}.png"])
 ```
 
 ---

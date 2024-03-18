@@ -13,7 +13,7 @@ marp: true
 ---
 
 # PhD Retreat: Open Science and reproducibility
-
+## Unlocking reproducibility for your own research
 19.03.24
 
 
